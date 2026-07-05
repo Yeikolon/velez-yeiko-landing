@@ -1,11 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Derrape Labs</title>
+
+    <link rel="icon" type="image/svg+xml" href="img/icono.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-    
+
+    <!--! Encabezado -->
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <p class="logo">Derrape<span>Labs</span></p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Abrir menú de navegación"
+                id="boton-desplegable">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto gap-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#instalaciones">Instalaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Reservar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+
+    <main>
+        <!--! Hero -->
+        <section id="inicio">
+            <div class="container hero">
+                <div class="hero-texto">
+                    <h1>Domina la pista. <span>Domina el juego.</span></h1>
+                    <p>
+                        Derrape Labs es el centro de simulación automotriz y deportes electrónicos
+                        donde pilotos y gamers entrenan con tecnología profesional, compiten en
+                        torneos y viven la adrenalina de la velocidad sin salir de la ciudad.
+                    </p>
+                    <a href="#servicios" class="btn-cta">Ver servicios</a>
+
+                    <div class="hud-panel" aria-hidden="true">
+                        <div class="hud-dato">
+                            <span class="hud-valor">12</span>
+                            <span class="hud-etiqueta">Simuladores</span>
+                        </div>
+                        <div class="hud-dato">
+                            <span class="hud-valor">20</span>
+                            <span class="hud-etiqueta">Cabinas gaming</span>
+                        </div>
+                        <div class="hud-dato">
+                            <span class="hud-valor">98%</span>
+                            <span class="hud-etiqueta">Satisfacción</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-img">
+                    <img src="img/hero-simulador.avif"
+                        alt="Cabina de simulación de conducción con volante de fuerza y triple pantalla">
+                </div>
+            </div>
+        </section>
+
+        <div class="divisor-velocidad" aria-hidden="true"></div>
+
+        <!--! Presentación de la empresa -->
+        <section id="nosotros" class="nosotros">
+            <div class="container nosotros-flex">
+                <img src="img/instalaciones-arena.avif"
+                    alt="Interior del centro Derrape Labs con cabinas de simulación y zona gaming"
+                    class="nosotros-img">
+
+                <div class="nosotros-texto">
+                    <h2>¿Quiénes somos?</h2>
+                    <p>
+                        Somos un centro especializado en simulación de conducción y deportes
+                        electrónicos, pensado para quienes aman la velocidad pero también para
+                        quienes disfrutan competir frente a una pantalla.
+                    </p>
+                    <p>
+                        Atendemos a entusiastas del motor, gamers competitivos, estudiantes y
+                        empresas que buscan un espacio distinto para eventos y team building.
+                    </p>
+                    <p>
+                        Resolvemos un problema concreto: acceder a equipos de simulación y
+                        gaming de nivel profesional sin necesidad de comprarlos, en un solo
+                        lugar y con instructores certificados.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--! Servicios -->
+        <section id="servicios" class="servicios">
+            <div class="container">
+                <h2 class="titulo-seccion">Nuestros Servicios</h2>
+                <p class="subtitulo-seccion">Todo lo que necesitas para acelerar, competir y disfrutar en un mismo
+                    lugar.</p>
+
+                <div class="row servicios-grid">
+
+                    <article class="col-12">
+                        <div class="card-servicio h-100">
+                            <div class="icono-dial">
+                                <i class="fa-solid fa-gauge-simple-high" style="color: rgb(116, 192, 252);"></i>
+                            </div>
+                            <h3>Simuladores de Conducción</h3>
+                            <p>Cockpits con retroalimentación de fuerza, triple pantalla curva y
+                                circuitos oficiales para una experiencia realista.</p>
+                            <a href="#instalaciones" class="enlace-servicio">Conocer más →</a>
+                        </div>
+                    </article>
+
+                    <article class="col-12">
+                        <div class="card-servicio h-100">
+                            <div class="icono-dial">
+                               <i class="fa-solid fa-gamepad" style="color: rgb(116, 192, 252);"></i>
+                            </div>
+                            <h3>Cabinas Gaming</h3>
+                            <p>Equipos gama alta, monitores de 240Hz y catálogo de e-sports
+                                competitivos para sesiones individuales o en grupo.</p>
+                            <a href="#instalaciones" class="enlace-servicio">Conocer más →</a>
+                        </div>
+                    </article>
+
+                    <article class="col-12">
+                        <div class="card-servicio h-100">
+                            <div class="icono-dial">
+                                <i class="fa-solid fa-trophy" style="color: rgb(116, 192, 252);"></i>
+                            </div>
+                            <h3>Torneos y Ligas</h3>
+                            <p>Competencias mensuales de simracing y e-sports con rankings,
+                                premios y transmisión en vivo desde el arena.</p>
+                            <a href="#contacto" class="enlace-servicio">Inscribirme →</a>
+                        </div>
+                    </article>
+
+                    <article class="col-12">
+                        <div class="card-servicio h-100">
+                            <div class="icono-dial">
+                                <i class="fa-solid fa-stopwatch" style="color: rgb(116, 192, 252);"></i>
+                            </div>
+                            <h3>Eventos Grupales</h3>
+                            <p>Reservaciones para cumpleaños, integraciones y eventos
+                                corporativos con paquetes cronometrados por horas.</p>
+                            <a href="#contacto" class="enlace-servicio">Reservar →</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!--! Sección visual destacada: Carrusel de instalaciones -->
+        <section id="instalaciones" class="instalaciones">
+            <div class="container">
+                <h2 class="titulo-seccion">Nuestras Instalaciones</h2>
+                <p class="subtitulo-seccion">Un recorrido por las estaciones donde vive la velocidad y la competencia.
+                </p>
+
+                <div id="carruselInstalaciones" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carruselInstalaciones" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Cabinas de simulación"></button>
+                        <button type="button" data-bs-target="#carruselInstalaciones" data-bs-slide-to="1"
+                            aria-label="Zona gaming"></button>
+                        <button type="button" data-bs-target="#carruselInstalaciones" data-bs-slide-to="2"
+                            aria-label="Torneo en vivo"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/cabinas-simulacion.avif" alt="Fila de cabinas de simulación de conducción">
+                            <div class="carousel-caption">
+                                <h3>Cabinas de Simulación</h3>
+                                <p>Volantes de force feedback y pedales profesionales.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/zona-gaming.webp" alt="Zona gaming con monitores de alto refresco">
+                            <div class="carousel-caption">
+                                <h3>Zona Gaming</h3>
+                                <p>Estaciones equipadas para e-sports competitivos.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/torneo-en-vivo.jpg" alt="Público observando un torneo de simracing en vivo">
+                            <div class="carousel-caption">
+                                <h3>Torneos en Vivo</h3>
+                                <p>Gradas y transmisión para cada competencia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselInstalaciones"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carruselInstalaciones"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!--! Indicadores -->
+        <section class="indicadores">
+            <div class="container">
+                <div class="row indicadores-grid">
+                    <div class="col-12">
+                        <span class="indicador-numero">+1,200</span>
+                        <span class="indicador-texto">Pilotos registrados</span>
+                    </div>
+                    <div class="col-12">
+                        <span class="indicador-numero">40+</span>
+                        <span class="indicador-texto">Estaciones disponibles</span>
+                    </div>
+                    <div class="col-12">
+                        <span class="indicador-numero">98%</span>
+                        <span class="indicador-texto">Satisfacción de usuarios</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--! Testimonios -->
+        <section id="testimonios" class="testimonios">
+            <div class="container">
+                <h2 class="titulo-seccion">Lo Que Dicen Nuestros Pilotos</h2>
+
+                <div class="row testimonios-grid">
+                    <article class="col-12">
+                        <div class="card-testimonio h-100">
+                            <p>Entrené para mi primera carrera real en los simuladores de Redline.
+                                La sensación del volante es sorprendentemente realista.</p>
+                            <div class="autor-testimonio">
+                                <div class="autor-avatar"><img src="img/testimonio-1.png" alt="Imagen de Axel"> </div>
+                                <div>
+                                    <span class="autor-nombre">Mateo Villacís</span>
+                                    <span class="autor-rol">Piloto amateur de simracing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12">
+                        <div class="card-testimonio h-100">
+                            <p>Organizamos aquí el torneo interno de la empresa y fue un éxito
+                                total. Las cabinas gaming y la logística fueron impecables.</p>
+                            <div class="autor-testimonio">
+                                <div class="autor-avatar"> <img src="img/testimonio-2.png" alt="Imagen de Elkin"> </div>
+                                <div>
+                                    <span class="autor-nombre">Alejandro Ortiz</span>
+                                    <span class="autor-rol">Coordinador de eventos corporativos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!--! Llamado a la acción -->
+        <section class="cta">
+            <div class="container">
+                <h2>Tu próxima carrera empieza aquí</h2>
+                <p>Reserva tu sesión o inscríbete al próximo torneo de Redline Arena.</p>
+                <a href="#contacto" class="btn-cta-outline">Reservar ahora</a>
+            </div>
+        </section>
+
+        <!--! Formulario -->
+        <section id="contacto" class="formulario">
+            <div class="container">
+                <h2 class="titulo-seccion">Solicita tu Reserva</h2>
+                <p class="subtitulo-seccion">Cuéntanos qué experiencia buscas y te contactaremos en menos de 24 horas.
+                </p>
+
+                <form class="form-contacto" method="get">
+
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" id="nombre" class="form-control" placeholder="Ingresa tu nombre">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo Electrónico</label>
+                        <input type="email" id="correo" class="form-control" placeholder="ejemplo@correo.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="tel" id="telefono" class="form-control" placeholder="0999999999">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="tipo-servicio" class="form-label">Tipo de Servicio</label>
+                        <select id="tipo-servicio" class="form-select">
+                            <option selected disabled>Selecciona una opción</option>
+                            <option>Simulador de conducción</option>
+                            <option>Cabina gaming</option>
+                            <option>Torneo o liga</option>
+                            <option>Evento grupal</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea id="mensaje" class="form-control" rows="4"
+                            placeholder="Cuéntanos más sobre tu reserva"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-cta">Solicitar Reserva</button>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-flex">
+
+            <div>
+                <h3>Derrape Labs</h3>
+                <p>Luz de América</p>
+                <p>info@derrapelabs.ec</p>
+                <p>+593 99 762 8391</p>
+                <p>Lun a Dom: 10:00 – 23:00</p>
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-instagram" style="color: rgb(214, 18, 150);"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube" style="color: rgb(255, 0, 0);"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            &copy; 2026 Derrape Labs. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
